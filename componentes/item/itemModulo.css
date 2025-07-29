@@ -3,3 +3,22 @@
     height: 20rem;
     background-color: red;
 }
+
+.titulo{
+    font-size: 1.5rem;
+    color: aliceblue;
+}
+
+.img{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 25%;
+    margin: auto;
+    display: flex;
+}
+
+.descrip{
+    font-size: 0.8rem;
+    color: aliceblue;
+    text-align: center;
+}
