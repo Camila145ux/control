@@ -1,3 +1,5 @@
+import { seccion1 } from "../seccion1/seccion1.js";
+
 function header() {
     let fondo = document.createElement("div");
     fondo.className = "rectangulo";
@@ -12,6 +14,8 @@ function header() {
 
     fondo.appendChild(nombre);
     fondo.appendChild(circulo);
+
+   
 
     return fondo;
 }
