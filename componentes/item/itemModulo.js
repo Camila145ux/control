@@ -12,6 +12,5 @@ export function item(titulo, urlImg){
         let header = document.querySelector(".header");
         header.classList.add('ocultar');
     });
-    //funcion anonima: ()=>{}
     return item;
 }
