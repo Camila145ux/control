@@ -2,6 +2,7 @@
     width: 20rem;
     height: 20rem;
     background-color: red;
+<<<<<<< HEAD
 }
 
 .titulo{
@@ -21,4 +22,20 @@
     font-size: 0.8rem;
     color: aliceblue;
     text-align: center;
+=======
+    border-radius: 3px;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px rgb(206, 197, 197);
+}
+
+
+
+.item Img{
+    width: 100%;
+
+}
+
+.verde{
+    background-color: green;
+>>>>>>> 7ff0bfe (header, ocultar)
 }
