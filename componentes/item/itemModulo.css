@@ -1,6 +1,6 @@
 .item {
-    width: 20rem;
-    height: 20rem;
+    width: 30rem;
+    height: 30rem;
     background-color: red;
 }
 
@@ -14,3 +14,26 @@
     background-color: green;
 }
 
+.item title{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.item img{
+    width: 15rem;
+    height: 15rem;
+    align-items: center;
+
+}
+
+.precio{
+    font-size: 40px;
+}
+
+.descrip{
+    font-size: 30px;
+}
+
+.precio {
+    font-size: 20px;
+}
