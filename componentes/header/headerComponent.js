@@ -9,7 +9,7 @@ function header() {
     fondo.className = "rectangulo";
 
     let nombre = document.createElement("nombre");
-    nombre.innerText = "Camila Barrondo"
+    nombre.innerText = "Tienda CB"
     nombre.className ="nombre";
 
     let circulo = document.createElement("div");
