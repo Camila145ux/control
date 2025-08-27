@@ -1,6 +1,6 @@
 .item {
-    width: 34rem;
-    height: 34rem;
+    width: 40rem;
+    height: 40rem;
     display: grid;
     align-items: center;
     justify-items: center;
@@ -27,8 +27,8 @@
 }
 
 .item img{
-    width: 15rem;
-    height: 15rem;
+    width: 13rem;
+    height: 13rem;
     align-items: center;
     justify-content: center;
 
@@ -48,3 +48,12 @@
     margin: 1rem;
 }
 
+@media (max-width: 480px) {
+  .item {
+    width: 90%;
+    height: 100%;
+    margin: 1rem auto;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+}

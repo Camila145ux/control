@@ -9,3 +9,8 @@
     justify-items: center;
 }
 
+@media (max-width: 768px) {
+ .seccion-1{
+    padding: 1rem;
+ }
+}

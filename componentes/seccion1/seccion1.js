@@ -1,4 +1,4 @@
-import { item } from "../item/itemModulo.js";
+import { item } from "../item/productoModulo.js";
 import { productos } from "../../database/productos.js";
 
 export function seccion1(){

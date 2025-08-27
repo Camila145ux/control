@@ -1,3 +1,4 @@
+
 export function item(titulo, urlImg, description, price){
     let item = document.createElement("div");
     item.className = "item";
@@ -25,9 +26,8 @@ export function item(titulo, urlImg, description, price){
     
 
     item.addEventListener("click",()=>{
-        item.classList.add("verde");
-        let header = document.querySelector(".header");
-        header.classList.add('ocultar');
+    
+
     });
     //funcion anonima: ()=>{}
     return item;

@@ -15,7 +15,24 @@ function seccion() {
     //nav
     seccion.appendChild(navComponent());
 
+    //localStorage
+let listaDeCompras = localStorage.getItem("carrito");
+
+if (!listaDeCompras) {
+ listaDeCompras = [];
+ localStorage.setItem("carrito", JSON.stringify(listaDeCompras));
+
+} else{
+    listaDeCompras=JSON.parse(listaDeCompras);
+}
+
+console.log(listaDeCompras);
+
+
+
+
     return seccion;
 }
+
 
 document.body.appendChild(seccion());
