@@ -2,6 +2,8 @@ import { header } from "./componentes/header/headerComponent.js";
 import { seccion1 } from "./componentes/seccion1/seccion1.js";
 import {navComponent} from "./componentes/nav/navComponent.js"
 
+let listaDeCompras = localStorage.getItem("carrito");
+
 function seccion() {
     let seccion = document.createElement("section");
 
@@ -16,15 +18,11 @@ function seccion() {
     seccion.appendChild(navComponent());
 
     //localStorage
-let listaDeCompras = localStorage.getItem("carrito");
-
 if (!listaDeCompras) {
  listaDeCompras = [];
  localStorage.setItem("carrito", JSON.stringify(listaDeCompras));
 
-} else{
-    listaDeCompras=JSON.parse(listaDeCompras);
-}
+} 
 
 console.log(listaDeCompras);
 
@@ -36,3 +34,5 @@ console.log(listaDeCompras);
 
 
 document.body.appendChild(seccion());
+
+export {listaDeCompras};

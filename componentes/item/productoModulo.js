@@ -1,3 +1,5 @@
+import { guardarProducto, obtenerProducto } from "../control/miLocalStorage.js";
+import { listaDeCompras } from "../../main.js";
 
 export function item(titulo, urlImg, description, price){
     let item = document.createElement("div");
@@ -24,11 +26,13 @@ export function item(titulo, urlImg, description, price){
     item.appendChild(span);
 
     
-
+ //funcion anonima: ()=>{}
     item.addEventListener("click",()=>{
-    
-
+        listaDeCompras.push("Nuevo elemento");
+    guardarProducto(listaDeCompras);
+    console.log("Producto en LocalStore");
+    location.reload();
     });
-    //funcion anonima: ()=>{}
+   
     return item;
 }

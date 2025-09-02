@@ -1,3 +1,4 @@
+ import { obtenerProducto } from "../control/miLocalStorage.js";
  export function navComponent(){
     let navComponent = document.createElement("div");
     navComponent.className = "navComponent";
@@ -21,6 +22,18 @@
     let c4 = document.createElement("div");
     c4.innerText = "🛒"
     c4.className = "c4";
+
+    let divItem = document.createElement("Div");
+    divItem.textContent = "";
+    divItem.className = "div-item";
+
+   
+    console.log(obtenerProducto());
+
+    if(obtenerProducto()!=""){
+    c4.appendChild(divItem);
+    }
+
 
     fondo2.appendChild(c1);
     fondo2.appendChild(c2);

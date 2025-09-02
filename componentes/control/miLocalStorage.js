@@ -1,11 +1,12 @@
-const LOCAL_STORAGE_KEY_ASSIGNMENTS = 'lista_compras';
+
+const CARRITO = 'carrito';
 
 function guardarProducto(producto) {
-localStorage.setItem(LOCAL_STORAGE_KEY_ASSIGNMENTS, JSON.stringify(producto));
+localStorage.setItem(CARRITO, JSON.stringify(producto));
 }
 
 function obtenerProducto() {
-return JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY_ASSIGNMENTS)) || [];
+return JSON.parse(localStorage.getItem(CARRITO)) || [];
 }
 
-export { LOCAL_STORAGE_KEY_ASSIGNMENTS, guardarProducto, obtenerProducto };
+export { CARRITO, guardarProducto, obtenerProducto };
